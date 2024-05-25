@@ -1,0 +1,33 @@
+<!-- Autores -->
+<!-- Bruna Porto De Lima e João Guilherme Gans -->
+
+<resources>
+
+    <!-- Define o estilo para o texto do título da Toolbar -->
+    <style name="ToolbarTitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <!-- Define o tamanho do texto para 20sp. -->
+        <item name="android:textSize">20sp</item>
+        <!-- Define a cor do texto como preto. -->
+        <item name="android:textColor">@color/preto</item>
+    </style>
+
+    <!-- Define o tema principal do aplicativo -->
+    <style name="Theme.Provao2" parent="Theme.MaterialComponents.Light">
+        <!-- Define a cor primária para o aplicativo. -->
+        <item name="colorPrimary">@color/fundo_azul_claro</item>
+        <!-- Define a variante da cor primária. -->
+        <item name="colorPrimaryVariant">@color/detalhe_laranja</item>
+        <!-- Define a cor do texto nos elementos primários. -->
+        <item name="colorOnPrimary">@color/preto</item>
+    </style>
+
+    <!-- Define o estilo para a sobreposição de pop-up -->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <!-- Define o estilo para a Toolbar personalizada -->
+    <style name="Widget.MyApp.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <!-- Aplica o estilo do texto do título da Toolbar. -->
+        <item name="titleTextAppearance">@style/ToolbarTitleText</item>
+    </style>
+
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tradutor Portunhol</string>
+    <string name="logo_description">Descrição do logo</string>
+    <string name="app_title">Tradutor Portunhol</string>
+    <string name="translate_button">Traduzir</string>
+    <string name="input_text_description">Descrição do campo de entrada</string>
+    <string name="input_hint">Digite o texto</string>
+</resources>
