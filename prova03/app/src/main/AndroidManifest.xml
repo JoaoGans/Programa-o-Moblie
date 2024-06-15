@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Declaração da versão XML e codificação de caracteres -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Elemento raiz do arquivo de manifesto do Android.
+         Define namespaces para atributos Android e ferramentas. -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Declara que o aplicativo precisa de permissão para acessar a Internet. -->
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Pokedex_bruna_"
+        tools:targetApi="31">
+        <!-- Elemento application define configurações globais do aplicativo.
+             - allowBackup: Habilita o backup do aplicativo.
+             - dataExtractionRules: Define regras de extração de dados.
+             - fullBackupContent: Especifica o arquivo de regras de backup completo.
+             - icon: Ícone padrão do aplicativo.
+             - label: Nome do aplicativo.
+             - roundIcon: Ícone arredondado para dispositivos que suportam.
+             - supportsRtl: Suporte para layouts da direita para a esquerda.
+             - theme: Tema padrão do aplicativo.
+             - tools:targetApi: Alvo da API de ferramentas para linting. -->
+
+        <activity
+            android:name=".view.MainActivity"
+            android:exported="true">
+            <!-- Define uma atividade principal do aplicativo.
+                 - android:name: Nome da classe da atividade.
+                 - android:exported: Define se a atividade pode ser lançada por componentes externos. -->
+
+            <intent-filter>
+                <!-- Filtro de intenção que define como a atividade pode ser iniciada. -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- Declara que esta atividade é o ponto de entrada principal do aplicativo. -->
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!-- Declara que esta atividade deve aparecer na tela inicial do lançador de aplicativos. -->
+            </intent-filter>
+        </activity>
+        <!-- Fechamento do elemento activity. -->
+    </application>
+    <!-- Fechamento do elemento application. -->
+
+</manifest>
+    <!-- Fechamento do elemento manifest. -->
